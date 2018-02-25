@@ -34,7 +34,7 @@
 		load data ...
 		SET [GLOBAL] FOREIGN_KEY_CHECKS=1; or ENABLE KEYS;
 		
-5. MySQL change database collation (any batch processing?)
+5. MySQL change database collation 
 * server: set name utf8
 * database: ALTER DATABASE <database_name> CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 * table: ALTER TABLE <table_name> CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;
