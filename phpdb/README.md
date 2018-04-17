@@ -38,3 +38,4 @@ sudo systemctl restart apache2
 * [HOW TO ENABLE USERDIR FOR APACHE2 / NGINX ON UBUNTU 17.04 / 17.10](https://websiteforstudents.com/enable-userdir-apache2-nginx-ubuntu-17-04-17-10/)
 * [Apache Userdir with SELinux on Fedora 27/25, CentOS/RHEL 7.4/6.9](https://www.if-not-true-then-false.com/2010/enable-apache-userdir-with-selinux-on-fedora-centos-red-hat-rhel/)
 * [Install PEAR DB module under XAMPP](https://jerryoem.wordpress.com/2009/02/12/install-pear-db-module-under-xampp/)
+* [php-pear broken on php 7.2](https://github.com/oerdnj/deb.sury.org/issues/668)
