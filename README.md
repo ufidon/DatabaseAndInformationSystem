@@ -23,3 +23,5 @@ Database and Information System.
 ### C# and database
 * [C# programming Tutorial Visual Studio](https://www.youtube.com/playlist?list=PLS1QulWo1RIZrmdggzEKbhnfvCMHtT-sA)
 * [C# Connect to SQLite Database](https://www.youtube.com/watch?v=APVit-pynwQ)
+* [Microsoft.Data.Sqlite Namespace](https://docs.microsoft.com/en-us/dotnet/api/microsoft.data.sqlite?view=msdata-sqlite-2.0.0)
+* [Devart.Data.SQLite Namespace](https://www.devart.com/dotconnect/sqlite/docs/Devart.Data.SQLite~Devart.Data.SQLite_namespace.html)
