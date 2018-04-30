@@ -27,11 +27,12 @@ namespace DbApp02
                 command.ExecuteNonQuery();
                 */
 
-                string sql = @"select fname || ' ' || lname as `full name`, country  from employee limit 5";
+                string sql = @"select fname || ' ' || lname as `full name`, country, Bdate  from employee limit 5";
                 SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
                 SQLiteDataReader reader = command.ExecuteReader();
                 while (reader.Read())
-                    Console.WriteLine("Name: " + reader["full name"] + " is from " + reader["country"]);
+                    Console.WriteLine("Name: " + reader["full name"] + " is from " + reader["country"] 
+                        + ", born on "+ DateTime.Parse(reader["Bdate"].ToString()));
 
                 m_dbConnection.Close();
             }
