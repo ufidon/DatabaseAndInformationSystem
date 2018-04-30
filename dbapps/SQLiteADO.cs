@@ -40,13 +40,28 @@ namespace DbApp02
                 sql = @"insert into shipper values(77,'UPS','7777777777')";
                 command = new SQLiteCommand(sql, m_dbConnection);
                 int rows = command.ExecuteNonQuery();
-                Console.WriteLine(rows.ToString() + " rows affected!");
+                Console.WriteLine(rows.ToString() + " rows inserted!");
 
 
                 sql = @"update shipper set PhoneNum='8888888888' where id=77";
                 command = new SQLiteCommand(sql, m_dbConnection);
                 rows = command.ExecuteNonQuery();
-                Console.WriteLine(rows.ToString() + " rows affected!");
+                Console.WriteLine(rows.ToString() + " rows updated!");
+
+
+                sql = @"select *  from shipper";
+                command = new SQLiteCommand(sql, m_dbConnection);
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                    Console.WriteLine("ID: " + reader["id"].ToString() + " is " + reader["Name"]
+                        + " with phone number:  " + reader["PhoneNum"]);
+
+                reader.Close();
+
+                sql = @"delete from shipper where id=77";
+                command = new SQLiteCommand(sql, m_dbConnection);
+                rows = command.ExecuteNonQuery();
+                Console.WriteLine(rows.ToString() + " rows deleted!");
 
 
                 sql = @"select *  from shipper";
